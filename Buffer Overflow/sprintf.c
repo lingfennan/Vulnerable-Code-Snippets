@@ -9,7 +9,7 @@ int main() {
  
     sprintf(buffer, "%s", "This string is too long!");
  
-    printf external link("check: %d", check); /* This will not print 0! */
+    // printf external link("check: %d", check); /* This will not print 0! */
  
     return EXIT_SUCCESS;
 }
