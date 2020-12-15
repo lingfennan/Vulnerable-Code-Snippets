@@ -4,6 +4,8 @@ FROM ubuntu:latest
 RUN apt-get update -yqq
 RUN apt-get install -yqq automake build-essential libtool
 RUN apt-get install -yqq gcc g++ git wget zip
+RUN dpkg --configure -a
+RUN DEBIAN_FRONTEND="noninteractive" apt-get install -yqq tzdata
 
 # get codeql
 WORKDIR /root/
