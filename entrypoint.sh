@@ -13,5 +13,6 @@ codeql database analyze -j0 cpp-db /root/codeql-repo/cpp/ql/src/Likely\ Bugs/ \
 	/root/codeql-repo/cpp/ql/src/Best\ Practices/ \
 	/root/codeql-repo/cpp/ql/src/Critical/ \
 	/root/codeql-repo/cpp/ql/src/experimental/ \
+	/root/codeql-repo/cpp/ql/src/bad-overflow-guard/ \
 	--format=csv --output cpp-results.csv
 

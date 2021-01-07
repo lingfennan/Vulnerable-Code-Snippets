@@ -7,4 +7,5 @@ services:
     volumes:
       - ./entrypoint.sh:/entrypoint.sh
       - ./:/src/
+      - ./bad-overflow-guard/:/root/codeql-repo/cpp/ql/src/bad-overflow-guard/
 
