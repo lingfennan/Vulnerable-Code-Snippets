@@ -1,0 +1,2 @@
+"Unbounded write","Buffer write operations that do not control the length of data written may overflow.","error","This 'call to sprintf' with input from [[""argv""|""relative:///Buffer Overflow/bof1.c:15:49:15:52""]] may overflow the destination.","/Buffer Overflow/bof1.c","15","5","15","11"
+"Potentially overrunning write","Buffer write operations that do not control the length of data written may overflow.","error","This 'call to sprintf' operation requires 25 bytes but the destination is only 10 bytes.","/Buffer Overflow/sprintf.c","10","5","10","11"
