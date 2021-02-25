@@ -9,7 +9,7 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get install -yqq tzdata
 
 # get codeql
 WORKDIR /root/
-RUN wget https://github.com/github/codeql-cli-binaries/releases/download/v2.4.0/codeql-linux64.zip
+RUN wget https://github.com/github/codeql-cli-binaries/releases/download/v2.4.4/codeql-linux64.zip
 RUN unzip codeql-linux64.zip
 RUN git clone --depth=1 https://github.com/github/codeql.git codeql-repo
 ENV PATH="/root/codeql:$PATH"
