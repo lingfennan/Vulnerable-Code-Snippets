@@ -3,7 +3,7 @@ version: "3.5"
 services:
   analyzer:
     build: .
-    image: lingfennan/codeql-analyzer:latest
+    image: lingfennan/codeql-analyzer:${TAG:-latest}
     volumes:
       - ./entrypoint.sh:/entrypoint.sh
       - ./:/src/
